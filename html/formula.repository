@@ -1,0 +1,6 @@
+\form#0:$a : (x_1,y_1)$
+\form#1:$b = (x_2,y_2)$
+\form#2:$\sqrt{(x_1-x_2)^2+(y_2-y_1)^2}$
+\form#3:$a = (a_x,a_y)$
+\form#4:$b = (b_x,b_y)$
+\form#5:$\sqrt{(a_x-b_x)^2+(a_y-b_y)^2}$

@@ -1,0 +1,6 @@
+<map id="tri::ac" name="tri::ac">
+<area shape="rect" id="node2" href="$classval.html#a8eaa22bc437049804cb2f62f678ef514" title="Retourne si la valeur est calculé " alt="" coords="108,5,192,32"/>
+<area shape="rect" id="node3" href="$classval.html#ac7cfadbdb2007e67927db559a5a539b3" title="Définie la nouvelle valeur, isCalc renvoi maintenant true " alt="" coords="108,56,192,83"/>
+<area shape="rect" id="node4" href="$classcoord.html#af830b1aa8709558179ba1c8b270e870f" title="Calcule la distance entre 2 points La distance entre &#160;et &#160;est . " alt="" coords="109,107,191,133"/>
+<area shape="rect" id="node5" href="$classval.html#a99152e788b81c872b57f6a61bb09bcdf" title="Renvoi la valeur calculée La valeur n&#39;a pas été calculée. " alt="" coords="108,157,192,184"/>
+</map>

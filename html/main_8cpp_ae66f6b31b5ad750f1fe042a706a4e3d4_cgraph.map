@@ -1,0 +1,15 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$main_8cpp.html#ae00021ab5e8b874695cda1f9f89a1d22" title="wifi" alt="" coords="104,341,147,367"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#a09cb30e4d03a059a8d96410923f78c0f" title="testAngle" alt="" coords="502,290,579,317"/>
+<area shape="rect" id="node7" href="$classcoord.html#af830b1aa8709558179ba1c8b270e870f" title="Calcule la distance entre 2 points La distance entre &#160;et &#160;est . " alt="" coords="938,265,1021,291"/>
+<area shape="rect" id="node11" href="$classtri.html#a88a4e5f359d724e110e9204760859928" title="Calcule le rayon du cercle Circonscrit a partir de son centre (si besoin) " alt="" coords="195,189,393,215"/>
+<area shape="rect" id="node14" href="$main_8cpp.html#a7e899545765332a831c029acd1cca159" title="Mise en forme du nombre, avec le bon nombre de chiffre après la virgule. " alt="" coords="267,417,321,443"/>
+<area shape="rect" id="node4" href="$classtri.html#aae4a424a7b2f8661b1753c8cd171d420" title="Calcule la valeur de [AB]. " alt="" coords="761,214,816,241"/>
+<area shape="rect" id="node9" href="$classtri.html#a7d464347d6e37bd2a9b9df8b1f64e447" title="Calcule la valeur de [BC]. " alt="" coords="761,265,816,291"/>
+<area shape="rect" id="node10" href="$classtri.html#afb9bf9fe12ec097a108c302bbd4746b6" title="Calcule la valeur de [AC]. " alt="" coords="761,315,816,342"/>
+<area shape="rect" id="node5" href="$classval.html#a8eaa22bc437049804cb2f62f678ef514" title="Retourne si la valeur est calculé " alt="" coords="937,163,1021,190"/>
+<area shape="rect" id="node6" href="$classval.html#ac7cfadbdb2007e67927db559a5a539b3" title="Définie la nouvelle valeur, isCalc renvoi maintenant true " alt="" coords="937,214,1021,241"/>
+<area shape="rect" id="node8" href="$classval.html#a99152e788b81c872b57f6a61bb09bcdf" title="Renvoi la valeur calculée La valeur n&#39;a pas été calculée. " alt="" coords="937,315,1021,342"/>
+<area shape="rect" id="node12" href="$classtri.html#af99bea0fbde8dfc8aa6991a932e7c3b6" title="Calcule le centre du cercle Circonscrit (si besoin) " alt="" coords="441,189,640,215"/>
+<area shape="rect" id="node13" href="$classdroite_utils.html#a7b36599b52df9c8ff3fb6bd34f3d0c39" title="Calcule un vecteur normale. " alt="" coords="688,163,889,190"/>
+</map>

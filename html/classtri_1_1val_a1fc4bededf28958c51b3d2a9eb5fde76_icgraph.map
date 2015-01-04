@@ -1,0 +1,8 @@
+<map id="tri::val::isCalc" name="tri::val::isCalc">
+<area shape="rect" id="node2" href="$classtri.html#af99bea0fbde8dfc8aa6991a932e7c3b6" title="Calcule le centre du cercle Circonscrit (si besoin) " alt="" coords="156,5,355,32"/>
+<area shape="rect" id="node3" href="$classtri.html#a88a4e5f359d724e110e9204760859928" title="Calcule le rayon du cercle Circonscrit a partir de son centre (si besoin) " alt="" coords="403,31,601,57"/>
+<area shape="rect" id="node4" href="$classtri.html#aae4a424a7b2f8661b1753c8cd171d420" title="Calcule la valeur de [AB]. " alt="" coords="228,107,283,133"/>
+<area shape="rect" id="node5" href="$classtri.html#af4df3abaedc88b6a424a753347fd80cd" title="Calcule le plus grand coté du triangle (si besoin) " alt="" coords="428,183,576,209"/>
+<area shape="rect" id="node6" href="$classtri.html#a7d464347d6e37bd2a9b9df8b1f64e447" title="Calcule la valeur de [BC]. " alt="" coords="228,208,283,235"/>
+<area shape="rect" id="node7" href="$classtri.html#afb9bf9fe12ec097a108c302bbd4746b6" title="Calcule la valeur de [AC]. " alt="" coords="228,259,283,285"/>
+</map>

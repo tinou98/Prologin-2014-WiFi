@@ -1,0 +1,9 @@
+<map id="tri::getPlusGrandCote" name="tri::getPlusGrandCote">
+<area shape="rect" id="node2" href="$classval.html#a8eaa22bc437049804cb2f62f678ef514" title="Retourne si la valeur est calculé " alt="" coords="304,5,388,32"/>
+<area shape="rect" id="node3" href="$classval.html#ac7cfadbdb2007e67927db559a5a539b3" title="Définie la nouvelle valeur, isCalc renvoi maintenant true " alt="" coords="304,56,388,83"/>
+<area shape="rect" id="node4" href="$classtri.html#aae4a424a7b2f8661b1753c8cd171d420" title="Calcule la valeur de [AB]. " alt="" coords="201,56,256,83"/>
+<area shape="rect" id="node6" href="$classval.html#a99152e788b81c872b57f6a61bb09bcdf" title="Renvoi la valeur calculée La valeur n&#39;a pas été calculée. " alt="" coords="304,157,388,184"/>
+<area shape="rect" id="node7" href="$classtri.html#a7d464347d6e37bd2a9b9df8b1f64e447" title="Calcule la valeur de [BC]. " alt="" coords="201,107,256,133"/>
+<area shape="rect" id="node8" href="$classtri.html#afb9bf9fe12ec097a108c302bbd4746b6" title="Calcule la valeur de [AC]. " alt="" coords="201,157,256,184"/>
+<area shape="rect" id="node5" href="$classcoord.html#af830b1aa8709558179ba1c8b270e870f" title="Calcule la distance entre 2 points La distance entre &#160;et &#160;est . " alt="" coords="305,107,387,133"/>
+</map>
