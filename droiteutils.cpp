@@ -59,7 +59,7 @@ droiteUtils::droiteUtils(const vecteur &v, const coord &point) {
 		// y = mx + p
 		// mx + -1y + p = 0
 		// ax + by + p
-		this->a = v.x / v.y;
+		this->a = v.y / v.x;
 		this->b = -1;
 		this->c = -this->a * point.x + point.y;
 	}

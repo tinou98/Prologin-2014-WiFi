@@ -21,7 +21,7 @@ public:
 	 * @param x La coordonné X du vecteur
 	 * @param y La coordonné Y du vecteur
 	 */
-	vecteur(const int &x, const int &y);
+	vecteur(const double &x, const double &y);
 
 	/**
 	 * @brief Constructeur de copie
@@ -47,6 +47,11 @@ public:
 	 */
 	friend std::ostream& operator<<(std::ostream& os, const vecteur& c);
 
+	/**
+	 * @brief Operateur d'addition
+	 * @param Valeur a ajouter
+	 * @return L'objet lui même
+	 */
 	vecteur& operator+=(vecteur const& a);
 };
 

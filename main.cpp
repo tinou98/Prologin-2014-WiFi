@@ -1,37 +1,82 @@
-#include <iostream>
-#include <math.h>
-#include <vector>
-#include <map>
-#include <limits>
+// Projet disponible en fichier séparé : https://github.com/tinou98/Prologin-2014-WiFi //
+// Les commentaires sont compatibles Doxygen //
 
-#include "coord.h"
+/**
+ * \file main.cpp
+ * \brief Programme de resolution du problème WiFi pour Prologin 2015
+ * \author Quentin M
+ * \version 1.2
+ * \date 4 Janvier 2015
+ */
+
+#include <vector>
+#include <math.h>
+#include <algorithm>
+#include <map>
+
 #include "tri.h"
+#include "coord.h"
+
+/** On définit PI pour qu'il ait la même précision sur tout les compilateurs */
+#define M_PI 3.14159265358979323846
 
 using namespace std;
 
-bool testAngle(tri t) {
-	cerr << "a : " << t.a << endl;
-	cerr << "b : " << t.b << endl;
-	cerr << "c : " << t.c << endl;
+vector<coord> blocked; /**< Tout point qui est passé qu'une fois : bloqué*/
+vector<coord> released; /**< Tout point qui est passé deux fois : débloqué*/
 
-	cerr << "AB : " << t.ab() << endl;
-	cerr << "BC : " << t.bc() << endl;
-	cerr << "CA : " << t.ac() << endl;
+/**
+ * @brief Teste les angles du triangle.
+ * Si un des angles est supérieur a 90°, il n'y aura pas de point enfermé
+ * @param t Un triangle
+ * @return `false` si un des angles est >90. `true` sinon
+ */
+bool testAngle(tri t) {
+	bool b = false;
+
+	//cerr << "a : " << t.a << endl;
+	//cerr << "b : " << t.b << endl;
+	//cerr << "c : " << t.c << endl;
+
+	//cerr << "AB : " << t.ab() << endl;
+	//cerr << "BC : " << t.bc() << endl;
+	//cerr << "CA : " << t.ac() << endl;
 
 	double ABC = acos((t.ab()*t.ab() + t.bc()*t.bc() - t.ac()*t.ac())/(2*t.ab()*t.bc()));
-cerr << "ABC : " << ABC << " => " << round(ABC*2 * 100) / 100 << " = " << ABC*180/M_PI << "\n";
-	if(round(ABC*2 * 100) / 100 >= round(M_PI * 100) / 100)	return false;
+//cerr << "ABC : " << ABC << " => " << round(ABC*2 * 100) / 100 << " = " << ABC*180/M_PI << "\n";
+	if(round(ABC*2 * 100) / 100 > round(M_PI * 100) / 100)	return false;
+double a1 = round(ABC*2 * 100) / 100;
+double a2 = round(M_PI * 100) / 100;
+	if(a1 == a2)	b = true;
 
 	double BCA = acos((t.bc()*t.bc() + t.ac()*t.ac() - t.ab()*t.ab())/(2*t.ac()*t.bc()));
-cerr << "BCA : " << BCA << " => " << round(BCA*2 * 100) / 100 << " = " << BCA*180/M_PI << "\n";
-	if(round(BCA*2 * 100) / 100 >= round(M_PI * 100) / 100)	return false;
+//cerr << "BCA : " << BCA << " => " << round(BCA*2 * 100) / 100 << " = " << BCA*180/M_PI << "\n";
+	if(round(BCA*2 * 100) / 100 > round(M_PI * 100) / 100)	return false;
+a1 = round(BCA*2 * 100) / 100;
+	if(a1 == a2)	b = true;
 
 	double BAC = acos((t.ab()*t.ab() + t.ac()*t.ac() - t.bc()*t.bc())/(2*t.ab()*t.ac()));
 	//double BAC = M_PI - ABC - BCA;
-cerr << "BAC : " << BAC << " => " << round(BAC*2 * 100) / 100 << " = " << BAC*180/M_PI << "\n";
-	if(round(BAC*2 * 100) / 100 >= round(M_PI * 100) / 100)	return false;
+//cerr << "BAC : " << BAC << " => " << round(BAC*2 * 100) / 100 << " = " << BAC*180/M_PI << "\n";
+	if(round(BAC*2 * 100) / 100 > round(M_PI * 100) / 100)	return false;
+a1 = round(BAC*2 * 100) / 100;
+	if(a1 == a2)	b = true;
 
-cerr << "## END ##\n";
+	if(b == true) {
+		coord c(t.getCentreCercleCirconscrit());
+		if(std::find(blocked.begin(), blocked.end(), c)!=blocked.end()) {
+			//cerr << c << " found. He is now released !!" << endl;
+			if(std::find(released.begin(), released.end(), c) == released.end()) {
+				released.push_back(c);
+			} else {//cerr << "Mais il est déjà dans la base ...\n";
+			}
+		} else {
+			//cerr << "Adding " << c << " too block !!" << endl;
+			blocked.push_back(c);
+		}
+	}
+
+	//cerr << "## END ##\n";
 	return true;
 }
 
@@ -71,8 +116,7 @@ void wifi(int n, std::vector<coord *> * tab) {
 
 					if(!found) {
 						if(testAngle(t)) {
-							cerr << t.getRayonCercleCirconscrit();
-							list.insert(make_pair<double, tri>(t.getRayonCercleCirconscrit(), t));
+							list.insert(make_pair(t.getRayonCercleCirconscrit(), t)); // Auto template ...
 						}
 					}
 				}
@@ -80,31 +124,44 @@ void wifi(int n, std::vector<coord *> * tab) {
 		}
 	}
 
-	cerr << "Nombre de triangle retenue (Pratique) : " << list.size() << endl;
-	cerr << "Nombre de triangle retenue (Théorie ) : " << (n*(n-1)*(n-2)) / (6) << endl;
+	//cerr << "Nombre de triangle retenue (Pratique) : " << list.size() << endl;
+	//cerr << "Nombre de triangle retenue (Théorie ) : " << (n*(n-1)*(n-2)) / (6) << endl;
 
 	for (std::multimap<double, tri>::reverse_iterator it=list.rbegin(); it!=list.rend(); ++it) {
-		bool ok = true;
-		double r = it->first,
-				r2 = r * r;
-		coord cCC =  it->second.getCentreCercleCirconscrit();
-		for(int l = 0; l < n; l++) {
-			double dist = cCC.dist(*tab->at(l));
-			cerr << "R² = " << r2 << "<?>" << dist << endl;
-			if(r2 < dist) {
-				cerr << "## FATAL ERROR : STOP :) ##" << endl;
-				ok = false;
-				break;
+		bool calc = true;
+		if(std::find(blocked.begin(), blocked.end(), it->second.getCentreCercleCirconscrit()) != blocked.end()) {
+			calc = false;
+			//cerr << "Item bloqué ..." << endl;
+			if(std::find(released.begin(), released.end(), it->second.getCentreCercleCirconscrit()) != released.end()) {
+				calc = true;
+				//cerr << "Item débloqué ..." << endl;
 			}
 		}
-		if(ok) {// Trouvé !
-			show(r);
-			return;
+
+		if (calc) {
+			//cerr << "Item libre ..." << endl;
+			bool ok = true;
+			double r = it->first;
+			coord cCC =  it->second.getCentreCercleCirconscrit();
+			for(int l = 0; l < n; l++) {
+				double dist = cCC.dist(*tab->at(l));
+				//cerr << "R = " << r << "<?>" << dist << " = dist" << endl;
+				if(r > dist) {
+					//cerr << "## Un routeur couvre déjà la zone piégé ... ##" << endl;
+					ok = false;
+					break;
+				}
+			}
+			if(ok) {// Trouvé !
+				show(r);
+				return;
+			}
 		}
 	}
+
 	// Rien ...
 	cout << "0" << endl;
-
+	return;
 }
 
 int main(){
@@ -118,10 +175,11 @@ int main(){
 		std::cin >> c->x >> std::skipws >> c->y;
 		coords->at(i) = c;
 
-		cerr << c->x << ";" << c->y << endl;
+		//cerr << c->x << ";" << c->y << endl;
 	}
 
 	wifi(n, coords);
 
 	return 0;
 }
+

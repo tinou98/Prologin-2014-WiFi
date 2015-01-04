@@ -3,7 +3,6 @@
 
 #include "val.h"
 #include "coord.h"
-
 /**
  * @brief Cette classe regroupe des fonction sur les triangles.
  */
@@ -80,5 +79,6 @@ private:
 };
 
 bool operator<(tri a, tri b);
+
 
 #endif // TRI_H

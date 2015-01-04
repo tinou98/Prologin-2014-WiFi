@@ -3,6 +3,7 @@
 
 #include <iostream>
 
+
 /**
  * @brief Stocke en 2d les coordonné d'un point
  */
@@ -49,7 +50,7 @@ public:
  * @brief Opérateur d'égalité
  * @param lhs Left-hand side
  * @param rhs Right-hand side
- * @return `true` si les deux paramètre sont égaux
+ * @return `true` si les deux points sont confondus
  */
 bool operator==(const coord& lhs, const coord& rhs);
 

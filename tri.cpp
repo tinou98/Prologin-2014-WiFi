@@ -52,41 +52,6 @@ bool tri::operator ==(const tri a) {
 coord tri::getCentreCercleCirconscrit() {
 	// Si on a pas déjà calculé
 	if(!centreCercleCirconscrit.isCalc()) {
-		//Début du calcul
-/*
-		// Equation de la droite (AB) : y = mx + p
-		// Pente (coefficient directeur)
-		double m = (a.y - b.y) / (a.x - b.x);
-
-		// Equation de la droite perpendiculaire a (AB) : y = nx + q
-		double n = -1/m;
-
-		// centre est le centre du segment [AB]
-		coord centre;
-		centre.x = (a.x + b.x) / 2;
-		centre.y = (a.y + b.y) / 2;
-
-		double q = -n * centre.x + centre.y;
-
-		// Equation de la droite (BC) : y = mx + p
-		// Pente (coefficient directeur)
-		m = (b.y - c.y) / (b.x - c.x);
-
-		// Equation de la droite perpendiculaire a (BC) : y = lx + r
-		double l = -1/m;
-
-		// centre est le centre du segment [BC]
-		centre.x = (b.x + c.x) / 2;
-		centre.y = (b.y + c.y) / 2;
-
-		double r = -l * centre.x + centre.y;
-
-		// centre est le centre du cercle circonscrit
-		centre.x = (r - q) / (n - l);
-		centre.y = n * centre.x + q; // = l * x + p
-*/
-
-
 		// Equation de la droite (AB)
 		droiteUtils ab(this->a, this->b);
 
@@ -99,6 +64,7 @@ coord tri::getCentreCercleCirconscrit() {
 		droiteUtils medAB(ab.getVecteurNormale(), centre);
 
 
+//TODO : Error Med BC for : (0, -1) et (4, 0)
 
 		// Equation de la droite (BC)
 		droiteUtils bc(this->b, this->c);
@@ -115,10 +81,11 @@ coord tri::getCentreCercleCirconscrit() {
 		centreCercleCirconscrit.setVal(
 										medAB.solve(medBC)
 									  );
-		std::cerr << "Tmp : " << medAB << "\t" << medBC << std::endl;
-		std::cerr << "Vect dir : " << medAB.getVecteurDirecteur() << "\t" << medBC.getVecteurDirecteur() << std::endl;
 
-		std::cerr << "Calcule de la valeur du centre : " << medAB.solve(medBC) << std::endl;
+		//std::cerr << "Tmp : " << medAB << "\t" << medBC << std::endl;
+		//std::cerr << "Vect dir : " << medAB.getVecteurDirecteur() << "\t" << medBC.getVecteurDirecteur() << std::endl;
+
+		//std::cerr << "Calcule de la valeur du centre : " << medAB.solve(medBC) << std::endl;
 	}
 
 	return centreCercleCirconscrit.getVal();
@@ -133,7 +100,7 @@ double tri::getRayonCercleCirconscrit() {
 
 		// On définie la valeur
 		rayonCercleCirconscrit.setVal(r);
-		std::cerr << "Calcule de la valeur du rayon : " << r << std::endl;
+		//std::cerr << "Calcule de la valeur du rayon : " << r << std::endl;
 	}
 
 	return rayonCercleCirconscrit.getVal();
@@ -185,3 +152,4 @@ double tri::getPlusGrandCote() {
 bool operator<(tri a, tri b) {
 	return a.getRayonCercleCirconscrit() < b.getRayonCercleCirconscrit();
 }
+

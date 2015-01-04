@@ -2,23 +2,21 @@
 
 #include <math.h>
 
-vecteur::vecteur() {
-
-}
+vecteur::vecteur() {}
 
 vecteur::vecteur(const vecteur &old) {
 	this->x = old.x;
 	this->y = old.y;
 }
 
-vecteur::vecteur(const int &x, const int &y) : x(x), y(y) {}
+vecteur::vecteur(const double &x, const double &y) : x(x), y(y) {}
 
 double vecteur::norme() {
 	return sqrt(pow(this->x, 2) + pow(this->y, 2));
 }
 
 void vecteur::normalize() {
-
+	// TODO : Implement func
 }
 
 vecteur& vecteur::operator+=(vecteur const& a) {
