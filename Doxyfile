@@ -44,18 +44,14 @@ PROJECT_NUMBER         = "Rendu final"
 # for a project that appears at the top of each page and should give viewer a
 # quick idea about the purpose of the project. Keep the description short.
 
-PROJECT_BRIEF          = "Le maire de votre ville a eu une idée ambitieuse pour faire profiter à tous ses concitoyens d'Internet : installer un routeur Wi-Fi à chaque coin de rue. Tous les routeurs Wi-Fi ont toujours la même portée.
-
-Pour le bien de la réélection du maire, celui-ci vous demande d'éviter de faire des jaloux : des concitoyens piégés dans une zone sans Wi-Fi isolée du reste du monde.
-
-Vous pouvez fixer la portée minimale du routeur, sachant qu'elle peut être amenée à augmenter à différents moments de la journée. Ainsi, la portée réelle d'un routeur est toujours supérieure à la portée minimale."
+PROJECT_BRIEF          = "Le maire de votre ville a eu une idée ambitieuse pour faire profiter à tous ses concitoyens d'Internet : installer un routeur Wi-Fi à chaque coin de rue. Tous les routeurs Wi-Fi ont toujours la même portée."
 
 # With the PROJECT_LOGO tag one can specify an logo or icon that is included in
 # the documentation. The maximum height of the logo should not exceed 55 pixels
 # and the maximum width should not exceed 200 pixels. Doxygen will copy the logo
 # to the output directory.
 
-PROJECT_LOGO           = /home/quentin/Images/ubuntuLogo_small.png
+PROJECT_LOGO           = /home/quentin/Bureau/untitled.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is

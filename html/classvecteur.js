@@ -1,7 +1,7 @@
 var classvecteur =
 [
     [ "vecteur", "classvecteur.html#a7c5a2915fdb62bd2bd43e4d09e30521a", null ],
-    [ "vecteur", "classvecteur.html#a5db55117072cb29a95406315a402bf9e", null ],
+    [ "vecteur", "classvecteur.html#a1139f6d6aa040329808006e1fab4581d", null ],
     [ "vecteur", "classvecteur.html#a992b43ed76fd3627bf6364cbf08a23d4", null ],
     [ "normalize", "classvecteur.html#ac8df0c206e7b4d0ff4dfb3e6dd6f2958", null ],
     [ "norme", "classvecteur.html#a2c0d5044192bd86cfe789d12bcd99554", null ],

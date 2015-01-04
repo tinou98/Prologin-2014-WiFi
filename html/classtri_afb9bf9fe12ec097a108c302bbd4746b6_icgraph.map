@@ -1,5 +1,5 @@
 <map id="tri::ac" name="tri::ac">
-<area shape="rect" id="node2" href="$main_8cpp.html#a09cb30e4d03a059a8d96410923f78c0f" title="testAngle" alt="" coords="143,5,221,32"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a09cb30e4d03a059a8d96410923f78c0f" title="Teste les angles du triangle. Si un des angles est supérieur a 90°, il n&#39;y aura pas de point enfermé ..." alt="" coords="143,5,221,32"/>
 <area shape="rect" id="node5" href="$classtri.html#af4df3abaedc88b6a424a753347fd80cd" title="Calcule le plus grand coté du triangle (si besoin) " alt="" coords="108,56,256,83"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ae00021ab5e8b874695cda1f9f89a1d22" title="wifi" alt="" coords="304,5,347,32"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="395,5,445,32"/>

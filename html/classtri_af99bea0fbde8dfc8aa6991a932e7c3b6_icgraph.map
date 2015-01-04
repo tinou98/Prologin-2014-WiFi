@@ -1,6 +1,7 @@
 <map id="tri::getCentreCercleCirconscrit" name="tri::getCentreCercleCirconscrit">
-<area shape="rect" id="node2" href="$classtri.html#a88a4e5f359d724e110e9204760859928" title="Calcule le rayon du cercle Circonscrit a partir de son centre (si besoin) " alt="" coords="252,31,451,57"/>
+<area shape="rect" id="node2" href="$main_8cpp.html#a09cb30e4d03a059a8d96410923f78c0f" title="Teste les angles du triangle. Si un des angles est supérieur a 90°, il n&#39;y aura pas de point enfermé ..." alt="" coords="313,5,390,32"/>
+<area shape="rect" id="node5" href="$classtri.html#a88a4e5f359d724e110e9204760859928" title="Calcule le rayon du cercle Circonscrit a partir de son centre (si besoin) " alt="" coords="252,56,451,83"/>
 <area shape="rect" id="node3" href="$main_8cpp.html#ae00021ab5e8b874695cda1f9f89a1d22" title="wifi" alt="" coords="516,5,559,32"/>
-<area shape="rect" id="node5" href="$tri_8h.html#a598f1fc64addabebe02c3a800a4dbc79" title="operator\&lt;" alt="" coords="499,56,576,83"/>
 <area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="624,5,675,32"/>
+<area shape="rect" id="node6" href="$tri_8h.html#a598f1fc64addabebe02c3a800a4dbc79" title="operator\&lt;" alt="" coords="499,56,576,83"/>
 </map>

@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['testangle',['testAngle',['../main_8cpp.html#a09cb30e4d03a059a8d96410923f78c0f',1,'main.cpp']]],
-  ['tri',['tri',['../classtri.html',1,'tri'],['../classtri.html#ac18c289653874dce5875bb985f099385',1,'tri::tri()']]],
-  ['tri_2ecpp',['tri.cpp',['../tri_8cpp.html',1,'']]],
-  ['tri_2eh',['tri.h',['../tri_8h.html',1,'']]]
+  ['setval',['setVal',['../classval.html#ac7cfadbdb2007e67927db559a5a539b3',1,'val']]],
+  ['show',['show',['../main_8cpp.html#a7e899545765332a831c029acd1cca159',1,'main.cpp']]],
+  ['solve',['solve',['../classdroite_utils.html#af7cd166893d1940058767def0f9c0606',1,'droiteUtils']]]
 ];
